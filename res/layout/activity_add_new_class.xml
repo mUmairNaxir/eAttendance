@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new_class"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.malikumair.mobileattendance.addNewClass"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:id="@+id/heading"
+            android:text="Register a Class"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="center"
+            android:fontFamily="serif-monospace"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:background="@color/holoGreenLight"
+            android:id="@+id/editText3"
+            android:hint="Enter Subject (e.g. Comm. Systems)"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/holoGreenLight"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/editText"
+            android:hint="Enter Semester (e.g. 4th Semester)" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/editText2"
+            android:padding="10dp"
+            android:background="@color/holoGreenLight"
+            android:layout_marginBottom="20dp"
+            android:hint="Enter Branch/Section (e.g. Civil Engg.)" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/holoGreenLight"
+            android:id="@+id/editText4"
+            android:hint="Enter Class Roll (e.g. 50)" />
+
+
+
+
+        <Button
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:background="@color/holoGreenDark"
+            android:id="@+id/doattendance" />
+    </LinearLayout>
+
+</LinearLayout>

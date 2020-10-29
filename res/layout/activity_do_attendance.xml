@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_do_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.malikumair.mobileattendance.DoAttendance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="#dddddd">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight of the Class"
+            android:layout_above="@+id/radioGroup"
+            android:textStyle="bold"
+            android:id="@+id/weightLabel"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:checkedButton="@+id/radioButton"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText"
+                app:buttonTint="@color/holoGreenDark"/>
+
+            <RadioButton
+                android:text="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText"
+                app:buttonTint="@color/holoGreenDark" />
+
+            <RadioButton
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText"
+                app:buttonTint="@color/holoGreenDark"/>
+            <RadioButton
+                android:text="2.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton4"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText"
+                app:buttonTint="@color/holoGreenDark"/>
+            <RadioButton
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton5"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText"
+                app:buttonTint="@color/holoGreenDark"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="?attr/colorButtonNormal"
+        android:text="Tap PRESENT or ABSENT to attend Roll No. 1"
+        android:fontFamily="serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Number:"
+            android:layout_gravity="center"
+            android:id="@+id/goBack"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:onClick="goBack"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_gravity="center"
+            android:id="@+id/btRollNo"
+            android:onClick="setRollNo"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Present"
+        android:layout_width="match_parent"
+        android:id="@+id/doattendance"
+        tools:ignore="HardcodedText"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:background="@android:color/holo_green_dark"
+        android:layout_height="150dp" />
+
+    <Button
+        android:text="Absent"
+        android:layout_width="match_parent"
+        android:id="@+id/overallbutton"
+        tools:ignore="HardcodedText"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="150dp" />
+
+
+
+
+</LinearLayout>

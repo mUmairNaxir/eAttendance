@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:fontFamily="serif-monospace"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,UnusedAttribute"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/textView3"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        tools:ignore="HardcodedText"
+        android:textSize="14sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal|bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>
